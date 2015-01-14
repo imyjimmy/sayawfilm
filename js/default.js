@@ -1,5 +1,5 @@
 var vid = document.getElementById("bgvid");
-var pauseButton = document.querySelector("#main button");
+var pauseButton = document.querySelector(".pause button");
 
 function vidFade() {
   vid.classList.add("stopfade");
@@ -18,9 +18,9 @@ pauseButton.addEventListener("click", function() {
   vid.classList.toggle("stopfade");
   if (vid.paused) {
     vid.play();
-    pauseButton.innerHTML = "Pause";
+    pauseButton.innerHTML = "<span class='glyphicon glyphicon-pause'></span>";
   } else {
     vid.pause();
-    pauseButton.innerHTML = "Paused";
+    pauseButton.innerHTML = "<span class='glyphicon glyphicon-play'></span>";
   }
 })
