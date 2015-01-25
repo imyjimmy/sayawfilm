@@ -11,9 +11,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-	<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="css/mobile.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/sticky-footer-navbar.css">
+	<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 400px)" href="css/mobile.css">
+	<!--todo: 800px, 2000px -->
+
 </head>
 <body>
 
@@ -30,33 +32,7 @@
 
 		<div class="header navbar navbar-default navbar-fixed-top">
 			<div class="container">
-        <div class="row">
-<!--           <div class="navbar-header">
-	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	          </button>
-        	</div>  -->
-        <!--for mobile -->
-        <!-- <div class="col-md-offset-6 collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle navbar-brand" id="t" data-toggle="dropdown">What's the T? <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="/whatsthet/index.php">Home</a></li>
-                  <li><a href="/whatsthet/ladies.php">The Ladies</a></li>
-                  <li><a href="/whatsthet/crew.php">The Crew</a></li>
-                  <li class="divider"></li>
-                  <li><a href="/whatsthet/photos.php">Photo Gallery</a></li>
-                  <li><a href="/whatsthet/press.php">Press</a></li>
-                  <li><a href="/whatsthet/events.php">Events</a></li>
-                  <li><a href="/whatsthet/contact.php">Contact</a></li>            
-                </ul>
-              </li>
-          </ul>
-        </div>/.nav-collapse -->
-      </div>
+        <div class="row"></div>
       </div>
 			<!--pages: about, dance team, crew, etc.-->
 			<div class="container centered">
@@ -64,7 +40,7 @@
       </div>
 		</div>
 	</div> <!--/#wrapper-->
-	<div class="pause container centered">
+	<div id="pauseButton" class="pause container centered">
 		<button><span class="glyphicon glyphicon-pause"></span></button>
 	</div>
 	<div id="main" class="centered"> <!-- will be "main"-->
@@ -73,7 +49,7 @@
         <li><a href="#">Home</a></li>
         <li><a href="#">Dancers</a></li>
         <li><a href="#">Film Crew</a></li>
-        <li><a href="#">Photo Gallery</a></li>
+        <li><a href="#">Photos</a></li>
         <li><a href="#">Press</a></li>
         <li><a href="#">Events</a></li>
         <li><a href="#">Contact</a></li>            
@@ -86,8 +62,9 @@
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/default.js"></script>
   <script src="js/cssBrowserSelector.js"></script>
+  <script src="js/mobile-detect.js"></script>
+  <script src="js/default.js"></script>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.8.1.min.js"><\/script>')</script>

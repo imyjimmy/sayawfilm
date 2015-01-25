@@ -13,7 +13,6 @@ vid.pause();
 vidFade();
 }); 
 
-
 pauseButton.addEventListener("click", function() {
   vid.classList.toggle("stopfade");
   if (vid.paused) {
@@ -24,3 +23,22 @@ pauseButton.addEventListener("click", function() {
     pauseButton.innerHTML = "<span class='glyphicon glyphicon-play'></span>";
   }
 })
+
+var md = new MobileDetect(window.navigator.userAgent);
+
+console.log( md.mobile() );          // 'iPhone' | 'Sony' | etc | 'null' if desktop/laptop
+console.log( md.phone() );           // 'iPhone'
+console.log( md.tablet() );          // null
+console.log( md.userAgent() );       // 'Safari'
+console.log( md.os() );              // 'iOS'
+console.log( md.is('iPhone') );      // true
+console.log( md.is('bot') );         // false
+console.log( md.version('Webkit') );         // 600.13
+console.log( md.versionStr('Build') );       // 'null'
+console.log( md.match('playstation|xbox') );	// false
+
+if (md.mobile() != null) {
+	//console.log("on a mobile..");
+	$('#bgvid').remove();
+	$('#pauseButton').remove();
+}

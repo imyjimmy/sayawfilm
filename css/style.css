@@ -155,9 +155,9 @@ a:hover{
   background:rgba(0,0,0,0.9);
 }
 @media screen and (max-width: 500px) { 
-  div{width:70%;} 
+  div{width:100%;} 
 }
 @media screen and (max-device-width: 800px) {
-  html { background: url('../video/thighHighProd.png') #000 no-repeat center center fixed; }
+  html { background: url('../video/sayawTrailer.png') #000 no-repeat center center fixed; }
   #bgvid { display: none; }
 }
