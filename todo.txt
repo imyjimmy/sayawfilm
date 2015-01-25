@@ -1,0 +1,14 @@
+#by @imyjimmy
+@Todo: 
+
+technical
+	- integrate with facebook.
+	- twitter (?)
+
+design
+	- move text out the way of vid
+  - design headers, footers,
+  - animation
+	- get font to show up
+  - use webicons to play, pause video, mute unmute audio
+  - pages : home, about, dancers, crew, press, events, contact

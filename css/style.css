@@ -28,18 +28,40 @@ body {
 }
 
 #bgvid { 
-  position: fixed;
+  position: absolute;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: url('../video/sayawTrailer.png') no-repeat; 
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+.chrome #bgvid {
   right: 0;
   bottom: 0;
   min-width: 100%;
   max-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  background: url('../video/thighHighProd.png') no-repeat;
-  background-size: cover;
-  transition: 1s opacity;
 }
+
+.gecko #bgvid { /*firefox */
+  right: -8%; /* if video does not load, right = 0*/
+  bottom: 0;
+  min-width: 100%;
+  max-height: 100%;
+}
+
+.safari #bgvid {
+  /*left: 0; /*coming soon is right of center*/
+  /*right: -10%; /* coming soon is left of center */
+  /*bottom: 0; /*safari*/
+  right: -12.5%; /*if video !load, right = 0; */
+  background-position: 5%;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 .stopfade { 
    opacity: .5;
 }
@@ -62,12 +84,26 @@ body {
   background: rgba(0,0,0,0.3);
   color: white;
   padding: .5rem;
-  font-size: 1.2rem;
+  font-family: sfMoviePoster;
+  font-size: 150%;
+  letter-spacing: .11em;
 }
 
-#main .container ul { list-style: none; position: relative; float: left; display: block; left: 50%; }
-#main .container ul li { position: relative; float: left; display: block; right: 50%; }
+#main .container ul { 
+  list-style: none; 
+  position: relative; 
+  float: left; 
+  display: block; 
+  left: 50%; 
+  padding-top: 10px;
+}
 
+#main .container ul li { 
+  position: relative; 
+  float: left; 
+  display: block; 
+  right: 50%; 
+}
 
 #sayawTitle {
   font-family: sfMoviePoster;
