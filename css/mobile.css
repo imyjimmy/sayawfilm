@@ -1,0 +1,51 @@
+body {
+  background: url('../img/Sayaw/Sayaw 014.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40% 0%;
+}
+
+#sayawTitle {
+  font-family: sfMoviePoster;
+  font-size: 600%;
+  letter-spacing: .12em;
+  color: rgba(250,250,250,1.0);
+}
+
+#main { 
+  position: relative;
+  height: 80px;
+  overflow: hidden;
+  width: 100%;
+  background: rgba(1,1,1,0.0);
+  color: white;
+  padding: .2rem;
+  font-family: sfMoviePoster;
+  font-size: 100%;
+/*  letter-spacing: .2em;*/
+}
+
+#main .container ul { 
+  list-style: none; 
+  position: relative; 
+  float: left; 
+  display: block; 
+  left: 50%; 
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+#main .container ul li { 
+  position: relative; 
+  float: left; 
+  display: block; 
+  right: 50%; 
+}
+
+.nav > li a {
+  padding: 2px 8px;
+}
+
+#wrap {
+  min-height: 100%;
+}
