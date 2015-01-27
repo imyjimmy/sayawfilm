@@ -100,6 +100,34 @@ body {
   height: 100%;
 }
 
+#thighHigh {
+  max-width: 90%; 
+  max-height:90%; 
+  padding-top:10px; 
+  float: right;
+}
+
+.left-subtitle {
+  float: right;
+  font-family: sfMoviePoster;
+  font-weight: bold;
+  font-size: 200%;
+  color: rgba(256,256,256,1.0);
+  letter-spacing: .11em;
+  margin-top: -3px;
+}
+
+.right-subtitle {
+  float: left;
+  font-family: sfMoviePoster;
+  font-weight: bold;
+  font-size: 200%;
+  color: rgba(256,256,256,1.0);
+  letter-spacing: .11em; 
+  line-height: 1.2;
+  margin: 0 0;
+}
+
 #main { 
   overflow: hidden;
   width: 100%;
