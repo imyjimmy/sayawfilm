@@ -38,7 +38,7 @@ body {
 }
 
 .chrome #bgvid {
-  right: 0;
+  left: 0;
   bottom: 0;
   min-width: 100%;
   max-height: 100%;
@@ -79,7 +79,6 @@ body {
 .carousel {
   position: relative;
   padding-top: 0;
-  margin-top: -120px;
 }
 
 /* courtesy of bootstrap, tweaked a little bit.*/
@@ -163,6 +162,7 @@ h1 {
   cursor: pointer;
   transition: .3s background;
 }
+
 .pause button:hover { 
    background: rgba(0,0,0,0.5);
 }
@@ -179,9 +179,11 @@ a {
   padding: .5rem;
   transition: .6s background; 
 }
-a:hover{
-  background:rgba(0,0,0,0.9);
+
+a:active, a:hover {
+  color: rgba(175,167,70,1.0);
 }
+
 @media screen and (max-width: 500px) { 
   div{width:100%;} 
 }
