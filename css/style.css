@@ -67,7 +67,6 @@ body {
 }
 
 .header {
-  position: fixed;
   width: 100%;
   top: 0;
 }
@@ -79,7 +78,8 @@ body {
 
 .carousel {
   position: relative;
-  padding-top: 6.5%;
+  padding-top: 0;
+  margin-top: -120px;
 }
 
 /* courtesy of bootstrap, tweaked a little bit.*/
@@ -89,7 +89,7 @@ body {
 .carousel .item {
   padding-top: 0px;
   padding-bottom: 5px;
-  height: 680px;
+  height: 580px;
 }
 
 .carousel-inner > .item > img {
