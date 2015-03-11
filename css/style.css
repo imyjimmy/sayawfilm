@@ -68,29 +68,33 @@
   text-align: center;
 }
 
-/*.carousel {
+.carousel {
   position: relative;
   padding-top: 0;
-}*/
+}
 
 /* courtesy of bootstrap, tweaked a little bit.*/
 /* Carousel base class */
 
 /* Declare heights because of positioning of img element */
-/*.carousel .item {
+.carousel .item {
   padding-top: 0px;
   padding-bottom: 5px;
   height: 580px;
-}*/
+}
 
-/*.carousel-inner > .item > img {
+.carousel-inner > .item > img {
   top: 0;
   left: 0;
   width: auto;
   margin-left: auto;
   margin-right: auto;
   height: 100%;
-}*/
+}
+
+.carousel-control.right, .carousel-control.left {
+  background: rgba(0,0,0,0);
+}
 
 #thighHigh {
   max-width: 90%; 
@@ -201,7 +205,7 @@ h1 {
   outline: 0;
 }*/
 
-div a {
+div ul li a {
   display: inline-block;
   color: #fff;
   text-decoration: none;
