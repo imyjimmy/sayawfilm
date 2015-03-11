@@ -22,27 +22,30 @@
     font-style: normal;
 }
 
-body {
-  margin: 0;
-  background: #000; 
-}
+/*body {*/
+/*  margin: 0;
+  background: url('../img/Sayaw/Sayaw 014.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;*/
+/*}*/
 
-#bgvid { 
-  position: absolute;
+/*#bgvid { */
+/*  position: absolute;
   width: auto;
   height: auto;
   z-index: -100;
   background: url('../video/sayawTrailer.png') no-repeat; 
   background-size: cover;
   transition: 1s opacity;
-}
+*/
+/*}*/
 
-.chrome #bgvid {
+/*.chrome #bgvid {
   left: 0;
   bottom: 0;
   min-width: 100%;
   max-height: 100%;
-}
+}*/
 
 .gecko #bgvid { /*firefox */
   right: -8%; /* if video does not load, right = 0*/
@@ -51,54 +54,43 @@ body {
   max-height: 100%;
 }
 
-.safari #bgvid {
-  /*left: 0; /*coming soon is right of center*/
-  /*right: -10%; /* coming soon is left of center */
-  /*bottom: 0; /*safari*/
-  right: -12.5%; /*if video !load, right = 0; */
-  background-position: 5%;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-
 .stopfade { 
    opacity: .5;
 }
 
-.header {
+/*.header {
   width: 100%;
   top: 0;
-}
+}*/
 
 .centered {
   margin: auto;
   text-align: center;
 }
 
-.carousel {
+/*.carousel {
   position: relative;
   padding-top: 0;
-}
+}*/
 
 /* courtesy of bootstrap, tweaked a little bit.*/
 /* Carousel base class */
 
 /* Declare heights because of positioning of img element */
-.carousel .item {
+/*.carousel .item {
   padding-top: 0px;
   padding-bottom: 5px;
   height: 580px;
-}
+}*/
 
-.carousel-inner > .item > img {
+/*.carousel-inner > .item > img {
   top: 0;
   left: 0;
   width: auto;
   margin-left: auto;
   margin-right: auto;
   height: 100%;
-}
+}*/
 
 #thighHigh {
   max-width: 90%; 
@@ -112,17 +104,18 @@ body {
   font-family: sfMoviePoster;
   font-weight: bold;
   font-size: 200%;
-  color: rgba(256,256,256,1.0);
+  color: rgba(0,0,0,1.0);
   letter-spacing: .11em;
   margin-top: -3px;
 }
 
 .right-subtitle {
   float: left;
+  clear: both;
   font-family: sfMoviePoster;
   font-weight: bold;
   font-size: 200%;
-  color: rgba(256,256,256,1.0);
+  color: rgba(0,0,0,1.0);
   letter-spacing: .11em; 
   line-height: 1.2;
   margin: 0 0;
@@ -162,9 +155,9 @@ body {
 
 #sayawTitle {
   font-family: sfMoviePoster;
-  font-size: 700%;
+  font-size: 720%;
   letter-spacing: .15em;
-  color: rgba(175,167,70,1.0);
+  color: rgba(195,167,70,1.0);
 }
 
 h1 {
@@ -173,7 +166,16 @@ h1 {
   margin-top: 0;
 }
 
-.pause {
+.video-container iframe, .video-container object, .video-container embed { 
+  /*position: absolute; */
+  /*top: 0; */
+  /*left: 0; */
+/*  position: relative;*/
+  /*width: 80%; */
+  /*height: 80%; */
+}
+
+/*.pause {
   padding-bottom: .5rem;
 }
 
@@ -197,9 +199,9 @@ h1 {
 
 .pause button:focus {
   outline: 0;
-}
+}*/
 
-a {
+div a {
   display: inline-block;
   color: #fff;
   text-decoration: none;
@@ -213,9 +215,9 @@ a:active, a:hover {
 }
 
 @media screen and (max-width: 500px) { 
-  div{width:100%;} 
+/*  div{width:100%;} */
 }
 @media screen and (max-device-width: 800px) {
-  html { background: url('../video/sayawTrailer.png') #000 no-repeat center center fixed; }
-  #bgvid { display: none; }
+/*  html { background: url('../video/sayawTrailer.png') #000 no-repeat center center fixed; }
+  #bgvid { display: none; }*/
 }

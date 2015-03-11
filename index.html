@@ -13,8 +13,68 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/sticky-footer-navbar.css">
-	<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 400px)" href="css/mobile.css">
-	<!--todo: 800px, 2000px -->
+	
+	<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/supersized.shutter.css" type="text/css" media="screen" />
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	
+	<script type="text/javascript" src="js/froogaloop.js"></script>
+	<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+	<script type="text/javascript" src="js/supersized.shutter.min.js"></script>
+
+	<script type="text/javascript">
+		
+		jQuery(function($){
+			
+			$.supersized({
+			
+				// Functionality
+				slideshow               :   1,			// Slideshow on/off
+				autoplay				:	1,			// Slideshow starts playing automatically
+				start_slide             :   1,			// Start slide (0 is random)
+				stop_loop				:	0,			// Pauses slideshow on last slide
+				random					: 	0,			// Randomize slide order (Ignores start slide)
+				slide_interval          :   8000,		// Length between transitions
+				transition              :   3, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+				transition_speed		:	1000,		// Speed of transition
+				new_window				:	1,			// Image links open in new window/tab
+				pause_hover             :   0,			// Pause slideshow on hover
+				keyboard_nav            :   1,			// Keyboard navigation on/off
+				performance				:	1,			// 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
+				image_protect			:	1,			// Disables image dragging and right click with Javascript
+														   
+				// Size & Position						   
+				min_width		        :   0,			// Min width allowed (in pixels)
+				min_height		        :   0,			// Min height allowed (in pixels)
+				vertical_center         :   1,			// Vertically center background
+				horizontal_center       :   1,			// Horizontally center background
+				fit_always				:	0,			// Image will never exceed browser width or height (Ignores min. dimensions)
+				fit_portrait         	:   1,			// Portrait images will not exceed browser height
+				fit_landscape			:   0,			// Landscape images will not exceed browser width
+														   
+				// Components							
+				slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+				thumb_links				:	1,			// Individual thumb links for each slide
+				thumbnail_navigation    :   0,			// Thumbnail navigation
+				slides 					:  	[			// Slideshow Images
+													{image : 'http://www.sayawfilm.com/img/Sayaw/Sayaw 014.jpg', title : '', thumb : 'http://www.sayawfilm.com/img/Sayaw/Sayaw 014.jpg', url : ''},
+													{image : 'http://www.sayawfilm.com/img/Sayaw/Sayaw 016.jpg', title : '', thumb : '', url : ''},  
+													{image : 'http://www.sayawfilm.com/img/Sayaw/Sayaw 021.jpg', title : '', thumb : '', url : ''},
+													{image : 'http://www.sayawfilm.com/img/Sayaw/Sayaw 026.jpg', title : '', thumb : '', url : ''},
+											],
+											
+				// Theme Options			   
+				progress_bar			:	1,			// Timer for each slide							
+				mouse_scrub				:	0
+				
+			});
+	    });
+	    
+	</script>
+	<!-- <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 400px)" href="css/mobile.css"> -->
+	<!--todo: <995px, >1200px -->
 </head>
 <body>
 
@@ -23,25 +83,28 @@
 			<div class="header navbar navbar-default"> <!--navbar-fixed-top -->
 				<div class="container">
 	        <div class="row">
-	        	<div class="col-md-3 col-md-offset-2" style="padding-top: 25px;"><img id="thighHigh" src="img/thighHighLogoWhite.png"></img><p class="left-subtitle">Presents</p></div>
-	        	<div class="col-md-1" style="padding-left: 10px; padding-right: 10px;"><h1 id="sayawTitle">Sayaw</h1></div>
-	        	<div class="col-md-2 col-md-offset-1" style="padding-top: 25px; padding-left: 0px;"><p class="right-subtitle">A Film By</p><p class="right-subtitle">Cecilio Asuncion</p></div>
+	        	<div class="col-sm-4 col-sm-offset-1" style="padding-top: 25px; padding-left: 20px; min-width: 165px; max-width: 33%;"><img id="thighHigh" src="img/thighHighLogo.png"></img><p class="left-subtitle">Presents</p></div>
+	        	<div class="col-sm-2 col-sm-offset-5 centered"><h1 id="sayawTitle">Sayaw</h1></div>
+	        	<div class="col-sm-3" style="padding-top: 25px; padding-left: 5%; min-width: 165px; max-width: 33%;"><p class="right-subtitle">A Film By</p><p class="right-subtitle">Cecilio Asuncion</p>
+	        	</div>
 	        </div>
-<!-- 	        <div class="row">
-	        	<div class="col-md-3 col-md-offset-2" style="padding-top: 20px;">Presents</img></div>
-	        	<div class="col-md-1" style="padding-left: 8px; padding-right: 8px;"></div>
-	        	<div class="col-md-1 col-md-offset-1">cecilio</div>
-	        </div> -->
 	      </div>
-				<!--pages: about, dance team, crew, etc.-->
-<!-- 				<div class="container centered">
-	        <h1 id="sayawTitle">Sayaw</h1>
-	      </div> -->
 			</div>
 		</div>
 
-				
+		<div class="container">
+			<div class="row">
+	  		<div class="centered">
+		  		<div class="video-container">
+		  			<!-- <video src="//www.youtube.com/watch?v=YVZ5CMNQM4E">Sorry, your browser doesn't support video.</video> -->
+		  			<!-- <iframe src="http://www.youtube.com/embed/YVZ5CMNQM4E?html5=1" allowfullscreen="" frameborder="0" width="640" height="360"></iframe> -->
+		  		  <iframe id="trailer" src="http://player.vimeo.com/video/102461989?api=1" allowfullscreen="" frameborder="0" width="720" height="405"></iframe>
+          </div>
+    		</div>
+    	</div>
+		</div>
 	</div> <!--/#wrapper-->
+
 	<div id="main" class="centered"> <!-- will be "main"-->
 		<div class="container centered">
 			<ul class="nav nav-pills centered nav-centered">
@@ -59,24 +122,12 @@
 	<!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="js/jquery.js"></script>
+  <!--<script src="js/jquery.js"></script>-->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/cssBrowserSelector.js"></script>
   <script src="js/mobile-detect.js"></script>
   <script src="js/default.js"></script>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.8.1.min.js"><\/script>')</script>
-
-	<!-- <script src="/assets/js/plugins.js?v=1"></script> -->
-	<!-- <script src="/assets/js/script.js?v=1"></script> -->
-
-	<script>
-		var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-		s.parentNode.insertBefore(g,s)}(document,'script'));
-	</script>
 
 </body>
 
