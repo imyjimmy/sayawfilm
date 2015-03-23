@@ -125,18 +125,21 @@
   margin: 0 0;
 }
 
-#main { 
+#footer { 
   overflow: hidden;
   width: 100%;
-  background: rgba(0,0,0,0.3);
+/*  background: rgba(0,0,0,0.3);*/
   color: white;
   padding: .5rem;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: sfMoviePoster;
   font-size: 150%;
   letter-spacing: .11em;
 }
 
-#main .container ul { 
+#footer .container ul { 
   list-style: none; 
   position: relative; 
   float: left; 
@@ -146,7 +149,7 @@
   padding-bottom: 4px;
 }
 
-#main .container ul li { 
+#footer .container ul li { 
   position: relative; 
   float: left; 
   display: block; 

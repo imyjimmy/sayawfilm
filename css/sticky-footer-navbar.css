@@ -9,7 +9,7 @@ body {
 
 /* Wrapper for page content to push down footer */
 #wrap {
-  min-height: 95%;
+  min-height: 100%;
   height: auto !important;
   height: 100%;
   /* Negative indent footer by its height */
@@ -19,10 +19,10 @@ body {
 }
 
 /* Set the fixed height of the footer here */
-#footer {
+/*#footer {
   height: 100px;
   width: 100%;
-}
+}*/
 
 /* Custom page CSS
 -------------------------------------------------- */
@@ -35,12 +35,11 @@ body {
   /*margin: 10px 0;*/
 }
 
-#footer > .container {
+/*#footer > .container {
   padding-left: 15px;
   padding-right: 15px;
-  /*margin: 0 0 0 0;*/
   max-width: 100%;
-}
+}*/
 
 code {
   font-size: 80%;
