@@ -31,11 +31,11 @@ jQuery(function($){
 				thumb_links				:	1,			// Individual thumb links for each slide
 				thumbnail_navigation    :   0,			// Thumbnail navigation
 				slides 					:  	[			// Slideshow Images
-													{image : 'http://www.sayawfilm.com/img/Sayaw/Sayaw 026.jpg', title : '', thumb : 'http://www.sayawfilm.com/img/Sayaw/Sayaw 014.jpg', url : ''},
-													{image : 'http://www.sayawfilm.com/img/Sayaw/Sayaw 050.jpg', title : '', thumb : '', url : ''},  
-													{image : 'http://www.sayawfilm.com/img/Sayaw/Sayaw 018.jpg', title : '', thumb : '', url : ''},
-													{image : 'http://www.sayawfilm.com/img/Sayaw/Sayaw 025.jpg', title : '', thumb : '', url : ''},
-													{image : 'http://www.sayawfilm.com/img/Sayaw/Sayaw 005.jpg', title : '', thumb : '', url : ''},
+													{image : 'http://www.imyjimmy.com/sayawfilm/img/slideshow/Sayaw 026.jpg', title : '', thumb : 'http://www.sayawfilm.com/img/Sayaw/Sayaw 014.jpg', url : ''},
+													{image : 'http://www.imyjimmy.com/sayawfilm/img/slideshow/Sayaw 050.jpg', title : '', thumb : '', url : ''},  
+													{image : 'http://www.imyjimmy.com/sayawfilm/img/slideshow/Sayaw 018.jpg', title : '', thumb : '', url : ''},
+													{image : 'http://www.imyjimmy.com/sayawfilm/img/slideshow/Sayaw 025.jpg', title : '', thumb : '', url : ''},
+													{image : 'http://www.imyjimmy.com/sayawfilm/img/slideshow/Sayaw 005.jpg', title : '', thumb : '', url : ''},
 											],
 											
 				// Theme Options			   
