@@ -108,7 +108,7 @@
   font-family: sfMoviePoster;
   font-weight: bold;
   font-size: 200%;
-  color: rgba(0,0,0,1.0);
+  color: rgba(255,255,255,1.0);
   letter-spacing: .11em;
   margin-top: -3px;
 }
@@ -119,7 +119,7 @@
   font-family: sfMoviePoster;
   font-weight: bold;
   font-size: 200%;
-  color: rgba(0,0,0,1.0);
+  color: rgba(255,255,255,1.0);
   letter-spacing: .11em; 
   line-height: 1.2;
   margin: 0 0;
@@ -127,6 +127,8 @@
 
 #footer { 
   overflow: hidden;
+  /*position: fixed;*/
+  bottom: 0;
   width: 100%;
 /*  background: rgba(0,0,0,0.3);*/
   color: white;
@@ -137,6 +139,31 @@
   font-family: sfMoviePoster;
   font-size: 150%;
   letter-spacing: .11em;
+
+/*  background: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+  ); 
+  background-image: -moz-linear-gradient(
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+  );
+  background-image: -o-linear-gradient(
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+  );
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+  );
+  background-image: -ms-linear-gradient(
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+  );*/
+}
+
+#footer .container {
+  padding-bottom: 30px;
 }
 
 #footer .container ul { 
@@ -173,46 +200,11 @@ h1 {
   margin-top: 0;
 }
 
-.video-container iframe, .video-container object, .video-container embed { 
-  /*position: absolute; */
-  /*top: 0; */
-  /*left: 0; */
-/*  position: relative;*/
-  /*width: 80%; */
-  /*height: 80%; */
-}
-
-/*.pause {
-  padding-bottom: .5rem;
-}
-
-.pause button { 
-  display: block;
-  width: 5%;
-  padding: .2rem;
-  border: none; 
-  margin: .5rem auto; 
-  font-size: 1.3rem;
-  background: rgba(0,0,0,0.25);
-  color: #fff;
-  border-radius: 3px; 
-  cursor: pointer;
-  transition: .3s background;
-}
-
-.pause button:hover { 
-   background: rgba(0,0,0,0.5);
-}
-
-.pause button:focus {
-  outline: 0;
-}*/
-
 div ul li a {
   display: inline-block;
   color: #fff;
   text-decoration: none;
-  background:rgba(0,0,0,0.5);
+  background:rgba(0,0,0,0.15);
   padding: .5rem;
   transition: .6s background; 
 }
