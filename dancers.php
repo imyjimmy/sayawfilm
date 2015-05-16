@@ -114,5 +114,6 @@
           <img id="mahalaya-img" style="height:auto;width:200px;" src="img/MahalayaCubales.jpg">
         </div>
       </div><br />
+    </div>
 <?php include 'footer.php'; ?>
 

@@ -20,6 +20,7 @@
 	<!-- <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 400px)" href="css/mobile.css"> -->
 	<!--todo: <995px, >1200px -->
 </head>
+
 <body>
 
 	<div id="wrap">
@@ -27,7 +28,7 @@
 			<div class="header navbar navbar-default"> <!--navbar-fixed-top -->
 				<div class="container">
 	        <div class="row">
-	        	<div class="col-sm-4 col-sm-offset-1" style="padding-top: 25px; padding-left: 20px; min-width: 165px; max-width: 33%;"><img id="thighHigh" src="img/thighHighLogo.png"></img><p class="left-subtitle">Presents</p></div>
+	        	<div class="col-sm-4 col-sm-offset-1" style="padding-top: 25px; padding-left: 20px; min-width: 165px; max-width: 33%;"><img id="thighHigh" src="img/thighHighLogoWhite.png"></img><p class="left-subtitle">Presents</p></div>
 	        	<div class="col-sm-2 col-sm-offset-5 centered"><h1 id="sayawTitle">Sayaw</h1></div>
 	        	<div class="col-sm-3" style="padding-top: 25px; padding-left: 5%; min-width: 165px; max-width: 33%;"><p class="right-subtitle">A Film By</p><p class="right-subtitle">Cecilio Asuncion</p>
 	        	</div>

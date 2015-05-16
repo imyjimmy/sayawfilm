@@ -203,5 +203,6 @@
           <img style="height:auto;width:290px;" src="img/GaylVincente.jpg">
         </div>
       </div><br />
+    </div>
 
 <?php include('footer.php'); ?>

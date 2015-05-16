@@ -1,4 +1,4 @@
-			<ul class="nav">
+	   <ul class="nav">
         <li><a href="index.php">Home</a></li>
         <li><a href="http://imyjimmy.com/sayawfilm/dancers.php">Dancers</a></li>
         <li><a href="http://imyjimmy.com/sayawfilm/crew.php">Film Crew</a></li>
