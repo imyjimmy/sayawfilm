@@ -13,6 +13,8 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/sticky-footer-navbar.css">
+
+	<link rel="stylesheet" type="text/css" href="css/popup-video.css">
 	
 	<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="css/supersized.shutter.css" type="text/css" media="screen" />

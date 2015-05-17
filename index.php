@@ -16,15 +16,15 @@
 	
 	<div id="footer" class="centered">
     <div class="container centered">
+    	<a class="popup-vimeo" href="https://vimeo.com/102461989">View Trailer</a><br>
       <?php include "footer-links.php"; ?>
 		</div>
 	</div>
 
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="js/jquery.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
-  <script type="text/javascript" src="js/jquery.min.js"></script>
   <!--background slideshow js-->
 	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
 	<script type="text/javascript" src="js/froogaloop.js"></script>
@@ -32,6 +32,10 @@
 	<script type="text/javascript" src="js/supersized.shutter.min.js"></script>
 	<script type="text/javascript" src="js/bg.js"></script>
 	<!-- end of bg slideshow js-->
+
+	<!--magnific popup-->
+	<!-- <script type="text/javascript" src="js/magnific.min.js"></script> -->
+	<script type="text/javascript" src="js/magnific-popup.js"></script>
 
   <script src="js/cssBrowserSelector.js"></script>
   <script src="js/mobile-detect.js"></script>
